@@ -7,62 +7,61 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="game-container">
-        <div id="supplies-container">
-            <div class="supply-item">
-                <div class="supply-box" id="supply-medicine">Medicine: 2</div>
-                <button class="buy-more-button" id="buy-medicine" onclick="buyMoreSupplies('medicine')">Buy More (£200)</button>
-            </div>
-            <div class="supply-item">
-                <div class="supply-box" id="supply-bandage">Bandages: 2</div>
-                <button class="buy-more-button" id="buy-bandage" onclick="buyMoreSupplies('bandage')">Buy More (£200)</button>
-            </div>
-            <div class="supply-item">
-                <div class="supply-box" id="supply-antiseptic">Antiseptic Cream: 2</div>
-                <button class="buy-more-button" id="buy-antiseptic" onclick="buyMoreSupplies('antiseptic')">Buy More (£200)</button>
-            </div>
-            <div class="supply-item">
-                <div class="supply-box" id="supply-thermometer">Thermometers: 2</div>
-                <button class="buy-more-button" id="buy-thermometer" onclick="buyMoreSupplies('thermometer')">Buy More (£200)</button>
-            </div>
-            <div class="supply-item">
-                <div class="supply-box" id="supply-stethoscope">Stethoscopes: 2</div>
-                <button class="buy-more-button" id="buy-stethoscope" onclick="buyMoreSupplies('stethoscope')">Buy More (£200)</button>
-            </div>
-            <div class="supply-item">
-                <div class="supply-box" id="supply-flea-treatment">Flea Treatments: 2</div>
-                <button class="buy-more-button" id="buy-flea-treatment" onclick="buyMoreSupplies('fleaTreatment')">Buy More (£200)</button>
-            </div>
-            <div class="supply-item">
-                <div class="supply-box" id="supply-special-food">Special Food: 2</div>
-                <button class="buy-more-button" id="buy-special-food" onclick="buyMoreSupplies('specialFood')">Buy More (£200)</button>
-            </div>
+    <div id="supplies-container">
+        <div class="supply-item">
+            <div class="supply-box" id="supply-medicine">Medicine: 2</div>
+            <button class="buy-more-button" id="buy-medicine" onclick="buyMoreSupplies('medicine')">Buy (£200)</button>
         </div>
-        <h1>Dr. Paws' Happy Pet Hospital!</h1>
-        <div id="vet-tier">Veterinary Nurse</div>
-        <div id="patient-area">
-            <div id="animal-info">
-                <img id="animal-image" src="" alt="Patient">
-                <div id="current-badge">✔️ Treated!</div>
-            </div>
-            <div id="symptom"></div>
-            <div id="animal-facts" style="font-size: 0.9em; color: #555; margin-top: 10px;"></div>
+        <div class="supply-item">
+            <div class="supply-box" id="supply-bandage">Bandages: 2</div>
+            <button class="buy-more-button" id="buy-bandage" onclick="buyMoreSupplies('bandage')">Buy (£200)</button>
         </div>
-        <div id="procedure-buttons"></div>
-        <div id="feedback"></div>
-        <div id="score-money-container">
-            <div id="score">Score: 0</div>
-            <div id="money">Money: £0</div>
+        <div class="supply-item">
+            <div class="supply-box" id="supply-stethoscope">Stethoscopes: 2</div>
+            <button class="buy-more-button" id="buy-stethoscope" onclick="buyMoreSupplies('stethoscope')">Buy (£200)</button>
         </div>
-        <div id="tier-up-popup">
-            <h2 id="tier-up-message-title">Yay!</h2>
-            <p id="tier-up-message"></p>
-            <button onclick="closeTierUpPopup()">Keep Going!</button>
+        <div class="supply-item">
+            <div class="supply-box" id="supply-bath-bombs">Bath Bombs: 2</div>
+            <button class="buy-more-button" id="buy-bath-bombs" onclick="buyMoreSupplies('bathBombs')">Buy (£200)</button>
+        </div>
+        <div class="supply-item">
+            <div class="supply-box" id="supply-special-food">Special Food: 2</div>
+            <button class="buy-more-button" id="buy-special-food" onclick="buyMoreSupplies('specialFood')">Buy (£200)</button>
         </div>
     </div>
-    <div id="badges-container">
-        <h2>Your Happy Animals:</h2>
-        <div id="earned-badges"></div>
+    <div id="game-wrapper">
+        <div id="game-container">
+            <h1>Dr. Paws' Happy Pet Hospital!</h1>
+            <div id="vet-tier">Veterinary Nurse</div>
+            <button id="next-patient-button" onclick="nextPatient()">Next Patient</button>
+            <div id="patient-area">
+                <div id="patient-top">
+                    <div id="animal-info">
+                        <img id="animal-image" src="" alt="Patient">
+                        <div id="current-badge">✔️ Treated!</div>
+                    </div>
+                    <div id="right-column">
+                        <div id="animal-facts"></div>
+                        <div id="symptom"></div>
+                    </div>
+                </div>
+                <div id="procedure-buttons"></div>
+            </div>
+            <div id="feedback"></div>
+            <div id="score-money-container">
+                <div id="score">Score: 0</div>
+                <div id="money">Money: £0</div>
+            </div>
+            <div id="happy-animals-container">
+                <h2>Happy Animals:</h2>
+                <div id="earned-badges"></div>
+            </div>
+            <div id="tier-up-popup">
+                <h2 id="tier-up-message-title">Yay!</h2>
+                <p id="tier-up-message"></p>
+                <button onclick="closeTierUpPopup()">Keep Going!</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
