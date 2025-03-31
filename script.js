@@ -240,7 +240,7 @@ function nextPatient() {
             document.getElementById('next-patient-button').style.display = 'block';
         } else {
             symptomElement.textContent = 'Congratulations! You have become a Zoologist and helped all the animals!';
-            animalImageElement.src = '';
+            animalImageElement.src = 'zoologist.png';
             procedureButtonsElement.innerHTML = '';
             animalFactsElement.innerHTML = '';
             currentBadgeElement.style.display = 'none';
