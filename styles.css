@@ -143,26 +143,28 @@ h1 {
 }
 
 #right-column {
-    width: 55%; /* Matches previous #animal-facts width */
+    width: 75%;
     display: flex;
-    flex-direction: column; /* Stack facts and symptom vertically */
-    gap: 10px; /* Space between facts and symptom */
+    flex-direction: column;
+    gap: 5px;
+    max-height: 120px;
 }
 
 #animal-facts {
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: #f30a96;
     text-align: left;
-    padding-left: 1px;
+    padding-left:1px; /* Increased from 1px to 10px */
+    line-height: 1.5;
 }
 
 #symptom {
     font-weight: bold;
     color: #3e73e7;
-    font-size: 1.3em;
-    text-align: left; /* Changed from center to align with facts */
-    line-height: 1.4;
-    min-height: 0; /* Remove min-height since it’s no longer standalone */
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 1px; /* Added to match #animal-facts */
 }
 
 /* Ensure procedure buttons stay below */
