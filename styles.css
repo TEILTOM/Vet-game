@@ -103,13 +103,18 @@ h1 {
 
 /* Rest of your existing styles remain unchanged unless adjustments are needed */
 #patient-area {
-    margin-bottom: 1px;
-    padding: 15px;
+    margin-bottom: 5px;
+    padding: 10px;
     border: 2px dashed #80deea;
     border-radius: 10px;
     background-color: #f0f8ff;
     width: 100%;
     box-sizing: border-box;
+    flex: 1 1 300px; /* Fixed base height, can grow/shrink */
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Contain overflow */
 }
 
 #patient-top {
@@ -128,8 +133,10 @@ h1 {
 
 #animal-image {
     max-width: 180px;
+    max-height: 150px; /* Cap height to prevent expansion */
     height: auto;
     margin-bottom: 1px;
+    object-fit: contain; /* Ensure image fits without distortion */
 }
 
 #current-badge {
@@ -147,7 +154,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    max-height: 120px;
+    max-height: 190px;
 }
 
 #animal-facts {
