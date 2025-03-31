@@ -90,13 +90,13 @@ body {
 /* Adjust remaining styles as needed */
 h1 {
     color: #00bcd4;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 1.9em;
 }
 
 #vet-tier {
     color: #2196F3;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-weight: bold;
     font-size: 1em;
 }
@@ -127,7 +127,7 @@ h1 {
 }
 
 #animal-image {
-    max-width: 190px;
+    max-width: 180px;
     height: auto;
     margin-bottom: 1px;
 }
@@ -183,7 +183,7 @@ h1 {
     padding: 8px 10px;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1.0em;
     flex: 1;
     text-align: center;
 }
@@ -203,13 +203,13 @@ h1 {
 #score-money-container {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 200px;
     margin-bottom: 1px;
     width: 100%;
 }
 
 #score, #money {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #00796b;
     font-weight: bold;
 }
@@ -240,7 +240,7 @@ h1 {
 #happy-animals-container h2 {
     color: #00796b;
     margin: 0 0 10px 0; /* Slightly more margin for separation */
-    font-size: 1.2em; /* Slightly larger for emphasis */
+    font-size: 1.0em; /* Slightly larger for emphasis */
 }
 
 #earned-badges {
@@ -293,7 +293,7 @@ h1 {
 
     #earned-badges {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Smaller min width on mobile */
-        gap: 8px;
+        gap: 2px;
     }
 }
 
